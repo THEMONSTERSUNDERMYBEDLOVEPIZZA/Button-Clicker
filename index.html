@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button_clicker_1.3.0</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+      <h1 class="title">Button clicker!</h1>
+      <button class="click_button" onclick="whenClick()">Click this button</button>
+      You have <b id = clicknumber>0</b> points!
+      (You have also clicked <b id =clicktimes>0</b> times.)
+      <p>
+      Your click strength is <b id=clickstrength>[LOADING]</b>,
+      and your multiplier is <b id="rebirthmultiplier">1</b>
+      <p>
+      And you get <b id=persecondnumber>0</b> points per second.
+      <p>
+      You have $<b id=money>0</b> at the moment.
+      <p>
+      <button id="upgrade1" cost=10 onclick="perClickUpgrade_clicked(upgrade1cost,1,1)">Stronger click: +1 per click (cost: 10 points)</button>
+      <p>
+      <button id="upgrade2" cost=40 onclick="perClickUpgrade_clicked(upgrade2cost,5,2)">Even stronger click: +5 per click (cost: 40 points)</button>
+      <p>
+      <button id="upgrade3" cost =100 onclick="perSecondUpgrade_clicked(upgrade3cost,5,3)">Weak robot: +5 per second (cost:100 points)</button>
+      <p>
+      <button id="upgrade4" cost =400 onclick="perSecondUpgrade_clicked(upgrade4cost,1000,4)">Strong robot: +1,000 per second (cost:4,000 points)</button> 
+      <p>
+      <button id="upgrade5" cost = 20000 onclick="perSecondUpgrade_clicked(upgrade5cost,9000,5)">Stronger robot: +9,000 per second (cost:20,000 points)</button>
+      <p>
+      <button id="upgrade6" cost = 50000 onclick="perClickUpgrade_clicked(upgrade6cost,8000,6)">Strongman click: +8,000 per click (cost:50,000 points)</button>
+      <p>
+      <button id="upgrade8" cost = 90000 onclick="perClickUpgrade_clicked(upgrade8cost,85000,8)">John click: +85,000 per click (cost: 450,000 points)</button>
+      <p>
+      <button id="upgrade7" cost = 90000000000 onclick="perMillisecondUpgrade_clicked(90000000000,10000)">ONE TIME: Gatling gun: +10000 per millisecond (cost: 90,000,000,000/90 billion)</button>
+      <p>
+      Rebirth cost: <b id="rebirthcost">1000000</b>
+      <p>
+      <button id="rebirth" class="rebirth" onclick="rebirthfunction()">Rebirth</button>
+      <p>
+      <b>Shop:</b>
+      <p>
+      p850 for $20: 
+      <button id="trade1" onclick="shoptrade_clicked(850,'points',20,'money')">Trade (-850 points, +20 dollars)</button>
+      <p>
+      $100 for pc850
+      <button id="trade2" onclick="shoptrade_clicked(100,'money',850,'perclick')">Trade (-100 dollars, + 850 points per click)</button>
+      <p>
+      $200 for ps425
+      <button id="trade3" onclick="shoptrade_clicked(200,'money',425,'persecond')">Trade (-200 dollars, + 425 points per second)</button>
+      <p>
+      <b>Achievements:</b>
+      <p>
+      <h5>Hello World! (start game) - Unlocked</h5>
+      <p>
+      <h5 id="babysteps">Baby Steps (Click the button) - Not unlocked</h5>
+      <p>
+      <h5 id="grind">Grind (Click the button 20 times or more) - Not unlocked</h5>
+      <p>
+      <h5 id="minimumwage">Minimum Wage (Get a clickstrength of 7.25 or more) - Not unlocked</h5>
+      <p>
+      <h5 id="entrepreneur">Entrepreneur (Trade 4 times) - Not unlocked </h5>
+      <p>
+      <h5 id="strongman">Strongman (Get a clickstrength of 50,000 or more) - Not unlocked</h5>
+      <p>
+      <h5 id="datacenter">Data Center (Get 50,000 clicks per second or more)- Not Unlocked</h5>
+      <p>
+      <h5 id=""></h5>
+      <p>
+      <b>More coming soon! (Hopefully)</b>
+  </body>
+</html>
